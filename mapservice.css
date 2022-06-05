@@ -1,0 +1,136 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+@-webkit-keyframes flip {
+  0%{-webkit-transform:rotateY(0deg);
+  opacity:1;}
+  100%{-webkit-transform:rotateY(95deg);
+  opacity:0;}
+}
+
+@-moz-keyframes flip {
+  0%{-webkit-transform:rotateY(0deg);
+  opacity:1;}
+  100%{-webkit-transform:rotateY(95deg);
+  opacity:0;}
+}
+
+@-o-keyframes flip {
+  0%{-webkit-transform:rotateY(0deg);
+  opacity:1;}
+  100%{-webkit-transform:rotateY(95deg);
+  opacity:0;}
+}
+
+@keyframes flip {
+  0%{-webkit-transform:rotateY(0deg);
+  opacity:1;}
+  100%{-webkit-transform:rotateY(95deg);
+  opacity:0;}
+}
+body {
+ background:url(forestblur.jpg) no-repeat;
+  background-size:cover 100%;
+}
+
+h2 {
+    color: #555;
+    text-align: center;
+}
+
+ul {
+  position:absolute;
+  top: 45px;
+	left: 15px;
+  margin:50px auto;
+  padding:0;
+  z-index: 9;
+  
+  width:200px;
+  height:220px;
+  list-style:none;
+  -webkit-perspective:1000;
+  -moz-perspective:1000;
+  -o-perspective:1000;
+  perspective:1000;
+}
+
+li {
+  margin:2px 0;
+  padding:0;
+}
+
+li a {
+  display:block;
+  height:18px;
+  width:20px;
+  background:rgba(155,155,155,0.5);
+  color:#fff;
+  padding:8px 6px;
+  text-decoration:none;
+  text-align:center;
+}
+
+li span {
+  width:154px;
+  float:left;
+  text-align:center;
+  background:rgba(155,155,155,0.5);
+  color:#fff;
+  margin:-34px 34px;
+  padding:8px 6px;
+  transform-origin:0%;
+  opacity:0;
+  -webkit-transform:rotateY(95deg);
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -o-transition:.5s;
+  transition:.5s;
+  -webkit-animation: flip 2s;
+  -moz-animation: flip 2s;
+  -o-animation: flip 2s;
+  animation: flip 2s;
+}
+
+span[class='menu']{-webkit-animation:none;}
+li:nth-child(2) span {
+  -webkit-animation-delay:.5s;
+  -moz-animation-delay:.5s;
+  -o-animation-delay:.5s;
+  animation-delay:.5s;}
+li:nth-child(3) span {
+  -webkit-animation-delay:.4s;
+  -moz-animation-delay:.4s;
+  -o-animation-delay:.4s;
+  animation-delay:.4s;}
+li:nth-child(4) span {
+  -webkit-animation-delay:.3s;
+  -moz-animation-delay:.3s;
+  -o-animation-delay:.3s;
+  animation-delay:.3s;}
+li:nth-child(5) span {
+  -webkit-animation-delay:.2s;
+  -moz-animation-delay:.2s;
+  -o-animation-delay:.2s;
+  animation-delay:.2s;}
+li:nth-child(6) span {
+  -webkit-animation-delay:.1s;
+  -moz-animation-delay:.1s;
+  -o-animation-delay:.1s;
+  animation-delay:.1s;}
+
+li a:hover ~ span {
+  opacity:1;
+  -webkit-transform:rotateY(0deg);
+  -moz-transform:rotateY(0deg);
+  -o-transform:rotateY(0deg);
+  transform:rotateY(0deg);
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -o-transition:.5s;
+  transition:.5s;
+}
