@@ -1,0 +1,54 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Map service</title>
+		<link rel="stylesheet" href="css/mapservice.css" />
+		<link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+		<link rel="stylesheet" href="css/css_menu.css" />
+		<script src="https://js.arcgis.com/4.23/"></script>
+		<script src="js/mapservice.js"></script>
+		<style>
+			div.hidden {border-style:hidden;}
+			div.outset {border-style:outset;}
+		</style>
+	</head>
+
+	<body>
+
+		<!--地图显示DIV-->
+		<div id="viewDiv01">
+
+		<div class="outset" id="attribution"></div>
+
+		<!--地图切换DIV-->
+		<div class = "dropdown1">
+			<button class="dropbtn1">数据选择</button>
+			<div class = "dropdown-content1">
+				<div id="basemap01" class="basemap" ><img src="img/gray.png"/></div>
+				<div id="basemap02" class="basemap" ><img src="img/national_geographic.jpg"/></div>
+				<div id="basemap03" class="basemap" ><img src="img/osm.jpg"/></div>
+			</div>
+		</div>
+
+		<!--添加图层-->
+
+		<div class ="dropdown2">
+			<button class="dropbtn2">添加数据</button>
+			<div class="dropdown-content2">
+				<p>Earthquakes</p>
+				<div id="basemap04" class="basemap" ><img src="img/gray.png"/></div>
+				<p>SampleWorld</p>
+				<div id="basemap06" class="basemap" ><img src="img/gray.png"/></div>
+				<div id="Layers"></div>
+			</div>
+		</div>
+		</div>
+<!--地图2-->
+		<div id="viewDiv02"></div>
+
+
+	</body>
+
+</html>
